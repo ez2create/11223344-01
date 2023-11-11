@@ -142,3 +142,153 @@
 .we_offer_card p{
     font-size: 12px;
 }
+.collections h1{
+    font-weight: 600;
+}
+.collections .sub_heading_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.sub_heading_right{
+    color: rgb(219, 37, 37);
+    cursor: pointer;
+    font-size: 13px;
+}
+.collection_Cards_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem;
+
+}
+.collection_Cards_container .card{
+    height: 300px;
+    min-width: 240px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+.card1{
+    background:url(images/collection1.jpg) ;
+}
+.card2 {
+    background: url(images/collection2.jpg);
+}
+.card3 {
+    background: url(images/collection3.jpg);
+}
+.card4 {
+    background: url(images/collection4.jpg);
+}
+.card .overlays{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-top: 0;
+    padding-left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8240546218487395) 0%, rgba(51, 51, 51, 0.3534663865546218) 50%, rgba(0, 212, 255, 0) 100%);
+    border-radius: 12px;
+
+}
+.card_content{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px 12px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.card_content h4{
+    font-weight: 400;
+    font-size: 15px;
+}
+.card_content p{
+    font-size: 14px;
+}
+
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 30%, 99%);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+.get_the_app .get_the_app_container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.container_left{
+    flex: 2;
+    display: flex;
+}
+.container_left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container_right{
+    flex: 3;
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container_right h1{
+    font-weight: 400;
+    font-size: 27px;
+}
+.container_right p{
+    font-size: 15px;
+}
+.container_right .app_radio_container{
+    display: flex;
+    gap: 2rem;
+}
+.app_radio_container input{
+    accent-color: rgb(227, 75, 75);
+    font-size: 14px;
+}
+.container_right .app_input_button{
+    display: flex;
+    gap: 1rem;
+}
+.container_right .app_input_button input{
+    outline: none;
+    width: 63%;
+    height:38px ;
+    border-radius: 5px;
+    border: gray solid 0.2px;
+}
+.container_right .app_input_button button{
+    background-color:rgb(227, 75, 75) ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 25%;
+    color: white;
+}
+.container_right h5{
+    font-weight: 400;
+    color: gray;
+}
+.container_right .app_store{
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+}
+.container_right .app_store img{
+    width: 35%;
+}
+
+
