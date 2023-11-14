@@ -290,5 +290,114 @@
 .container_right .app_store img{
     width: 35%;
 }
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0%;
+    margin: auto;
+}
+.footer_section1 img{
+    width: 130px;
+}
+.footer_flag_lang{
+    display: flex;
+    gap: 1rem;
 
+}
+.footer_flag_lang button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px ;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
 
+}
+.footer_flag_lang img{
+    width: 20px;
+}
+.navigation_container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+.navigation_container .navigatin_links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}.navigatin_links h5{
+    font-weight: 500;
+    font-size: 16px;
+}
+.navigatin_links a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;
+    font-size: 13px;
+}
+.navigatin_links a:hover{
+    color: black;
+}
+.socialmedia_links{
+    gap: 2px; 
+    flex-wrap: wrap;
+}
+.appstore_link{
+    padding-top: 2rem;
+    width: 100%;
+}
+.socialmedia_links button{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+}
+.socialmedia_links button i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+.copyright{
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid gray;
+    color: grey;
+    padding: 1.5rem 0;
+}
+.copyright p{
+    font-size: 13.2px;
+}
+@media only screen and (max-width:900px){
+    .navigation_container{
+        grid-template-columns:repeat(3, 1fr) ;
+    }
+}
+@media only screen and (max-width:400px) {
+    .navigation_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:250px) {
+    .navigation_container {
+        grid-template-columns: repeat( 1fr);
+    }
+}
