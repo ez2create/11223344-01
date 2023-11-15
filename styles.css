@@ -219,6 +219,7 @@
     background-color: hsl(0, 30%, 99%);
     width: 100%;
     padding: 3rem 6rem;
+    margin: auto;
 }
 .get_the_app .get_the_app_container{
     width: 60%;
@@ -242,8 +243,72 @@
     gap: 1.2rem;
     display: flex;
     flex-direction: column;
-    
+    flex-wrap: wrap;
 }
+@media only screen and (max-width:900px) {
+    .container_right{
+        flex:2;
+    }
+    .get_the_app .get_the_app_container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .get_the_app{
+        padding: 2rem 5rem;
+    }
+}
+@media only screen and (max-width:650px) {
+    .container_right {
+        flex: 2;
+    }
+
+    .get_the_app .get_the_app_container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media only screen and (max-width:500px) {
+    .container_right {
+        flex: 2;
+    }
+
+    .get_the_app .get_the_app_container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .get_the_app {
+        padding: 1rem 2.5rem;
+    }
+
+}
+@media only screen and (max-width:410px) {
+    .container_left img{
+        width: 100%;
+    }
+    .container_left{
+        flex: auto;
+    }
+
+    .get_the_app .get_the_app_container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .get_the_app {
+        padding: 0.5rem 2rem;
+    }
+
+}
+
+
 .container_right h1{
     font-weight: 400;
     font-size: 27px;
@@ -269,6 +334,7 @@
     height:38px ;
     border-radius: 5px;
     border: gray solid 0.2px;
+    padding: 12px;
 }
 .container_right .app_input_button button{
     background-color:rgb(227, 75, 75) ;
@@ -300,6 +366,7 @@
     justify-content: space-between;
     padding: 2rem 0%;
     margin: auto;
+    flex-wrap: wrap;
 }
 .footer_section1 img{
     width: 130px;
@@ -355,6 +422,11 @@
 }
 .appstore_link{
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.appstore_link img{
     width: 100%;
 }
 .socialmedia_links button{
@@ -391,13 +463,36 @@
         grid-template-columns:repeat(3, 1fr) ;
     }
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
     .navigation_container {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-@media only screen and (max-width:250px) {
-    .navigation_container {
-        grid-template-columns: repeat( 1fr);
+    .navigatin_links{
+        width: 80%;
+        flex-wrap: wrap;
     }
+    .navigation_container{
+        gap: 0;
+    }
+}
+@media only screen and (max-width:370px) {
+    .navigation_container {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:255px) {
+    .get_the_app {
+        padding: 0.25rem 0.5rem;
+    }
+    .navigation_container {
+        width: 95%;
+    }
+    .copyright {
+        font-weight: 300;
+        width: 95%;
+    }
+    .footer_section1{
+        width: 95%;
+    }
+
 }
